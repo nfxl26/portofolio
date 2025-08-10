@@ -1,0 +1,209 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a0b1c;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #0a0b1c;
+    color: #00bfff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #00bfff;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    color: #00bfff;
+  }
+  
+  nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #00cfff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #00cfff;
+  }
+  
+  .button-link {
+    background-color: rgba(0, 191, 255, 0.1);
+    border-radius: 999px;
+    padding: 8px 20px;
+    color: #00cfff;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .button-link:hover {
+    background-color: #00bfff;
+    color: #0e0f1b;
+  }
+  
+  
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(145deg, #0b0c18, #0f1120);
+  }
+  
+  .hero img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+  }
+  
+  .hero h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #00bfff;
+  }
+  
+  .intro {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #bbbbbb;
+  }
+  
+  .skills-preview {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .skill-item.row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #121329;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .skill-item.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .skill-item .image {
+    flex: 0 0 280px;
+  }
+  
+  .skill-item .image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .skill-item .text {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .skill-item .text h3 {
+    color: #00cfff;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .skill-item .text p {
+    font-size: 18px;
+    color: #aaa;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00bfff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #0099cc;
+  }
+  
+  footer {
+    background-color: #1a1c2c;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  @media (max-width: 768px) {
+    .skill-item.row,
+    .skill-item.reverse {
+      flex-direction: column;
+    }
+    .skill-item .image,
+    .skill-item .text {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  }
+
+.social-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.btn-social {
+  background-color: #121329;
+  color: #00cfff;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 18px rgba(0, 191, 255, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-social i {
+  font-size: 20px;
+}
+
+.btn-social:hover {
+  background-color: #00bfff;
+  color: #0a0b1c;
+  transform: translateY(-3px);
+}
